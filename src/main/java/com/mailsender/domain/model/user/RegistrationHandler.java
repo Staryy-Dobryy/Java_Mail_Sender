@@ -13,7 +13,7 @@ public class RegistrationHandler {
     public RegistrationHandler(UserRepository repository) {
         this.repository = repository;
     }
-    public UserModel Register(String username, String email) throws RegistrationException {
+    public UserModel register(String username, String email) throws RegistrationException {
 
         UserModel existingUser = repository.findByUsername(username);
         if (existingUser != null) {
