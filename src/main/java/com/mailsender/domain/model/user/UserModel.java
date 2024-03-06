@@ -18,7 +18,7 @@ public class UserModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     @Column(name = "email", nullable = false, unique = true)
     private String email;
     @Column(name = "username", length = 30, nullable = false)
@@ -27,7 +27,7 @@ public class UserModel {
     @Column(name = "createdOn", nullable = false)
     private Date createdOn;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 

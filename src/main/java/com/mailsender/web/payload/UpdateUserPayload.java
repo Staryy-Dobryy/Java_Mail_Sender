@@ -1,7 +1,6 @@
 package com.mailsender.web.payload;
 
 import com.mailsender.domain.services.requests.UpdateUserServiceRequest;
-import com.mailsender.web.results.ApiResult;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;

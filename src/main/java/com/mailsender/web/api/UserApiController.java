@@ -9,9 +9,10 @@ import com.mailsender.web.payload.CreateUserPayload;
 import com.mailsender.web.payload.DeleteUserPayload;
 import com.mailsender.web.payload.UpdateUserPayload;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
+@Controller
 @RequestMapping(path = "/api/user")
 public class UserApiController {
 
