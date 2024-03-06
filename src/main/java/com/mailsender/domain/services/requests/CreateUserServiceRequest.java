@@ -1,4 +1,4 @@
-package com.mailsender.domain.services.requests;
+package com.mailsender.domain.services.requests.user;
 
 import org.springframework.util.Assert;
 

@@ -1,4 +1,4 @@
-package com.mailsender.domain.services.requests;
+package com.mailsender.domain.services.requests.user;
 
 public class DeleteUserServiceRequest {
     private Integer id;
