@@ -10,7 +10,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 @RequestMapping(path = "/api/corn")
 public class CornApiController {
 
@@ -48,10 +48,5 @@ public class CornApiController {
         cornService.deleteCorn(id);
 
         return ResponseEntity.ok().build();
-    }
-
-    @Scheduled(fixedRate = 60000) // Проверка каждую минуту
-    public void executeCornJobs() {
-        cornService.executeCornJobs();
     }
 }
